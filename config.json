@@ -1,0 +1,10 @@
+{
+	"prefix": "\\",
+	"commands" : {
+		"ping" : ["ping", "shwoop"],
+		"join" : ["join", "j"],
+		"leave" : ["leave", "l"],
+		"play" : ["play", "p"],
+		"debug" : ["debug","dbg"]
+	}
+}

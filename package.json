@@ -1,0 +1,19 @@
+{
+  "name": "tislam",
+  "version": "0.0.1",
+  "description": "musica",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jell-O",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "fs": "0.0.1-security",
+    "ytdl-core": "^3.2.2"
+  }
+}
