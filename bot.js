@@ -22,6 +22,8 @@ client.login(process.env.DISCORD_TOKEN);
 
 client.on('debug', debug => console.log(debug));
 
+client.connections = new Discord.Collection(); // server : broudcast
+
 client.on('message', async message => { //TODO add isready bool
 	if (!message.content.startsWith(config.prefix)|| message.author.bot) return;  // check for prefix
 	const args = message.content.slice(config.prefix.length).trim().split(' '); // create args array with words after command
