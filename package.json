@@ -14,6 +14,7 @@
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.7",
     "fs": "0.0.1-security",
-    "ytdl-core": "^3.2.2"
+    "ytdl-core": "^3.2.2",
+    "ytdl-core-discord": "^1.2.1"
   }
 }
