@@ -5,6 +5,8 @@
 		"join" : ["join", "j"],
 		"leave" : ["leave", "l"],
 		"play" : ["play", "p"],
+		"disconnect" : ["disconnect","d"],
+		"pause" : ["pause","pee"],
 		"debug" : ["debug","dbg"]
 	}
 }

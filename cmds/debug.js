@@ -10,6 +10,8 @@ module.exports = {
         // let url = args[0]; 
         // const dispatcher = connection.play(ytdl(url));
         // return dispatcher;
-        console.log(message.guild.id);
+        // const connection = await message.member.voice.channel.join();
+        console.log(message.client.voice.connections);
+        message.client.voice.connections.get('')
 	},
 };
