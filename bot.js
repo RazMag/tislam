@@ -18,7 +18,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(process.env.DISCORD_TOKEN); 
+client.login(process.env.TOKEN); 
 
 // client.on('debug', debug => console.log(debug));
 
