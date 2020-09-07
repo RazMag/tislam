@@ -1,4 +1,5 @@
 const ytdl = require('ytdl-core');
+const makeEmbedMessage = require('../makeEmbedMessage.js')
 
 module.exports = {
 	name: 'debug',
@@ -11,7 +12,11 @@ module.exports = {
         // const dispatcher = connection.play(ytdl(url));
         // return dispatcher;
         // const connection = await message.member.voice.channel.join();
-        console.log(message.client.voice.connections);
-        message.client.voice.connections.get('')
+        // console.log(message.client.voice.connections);
+        // message.client.voice.connections.get('')
+        eMessage = makeEmbedMessage.execute();
+        message.channel.send(eMessage);
+        // eMessage.fields[0].value = "3";
+        // console.log(eMessage);
 	},
 };
