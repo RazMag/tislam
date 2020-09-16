@@ -14,6 +14,8 @@
     "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.2.7",
     "fs": "0.0.1-security",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0",
     "ytdl-core": "^3.2.2",
     "ytdl-core-discord": "^1.2.1"
   }

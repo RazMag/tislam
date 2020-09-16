@@ -1,3 +1,5 @@
+// make simple embed message template (still needs some work)
+
 const Discord = require('discord.js');
 
 module.exports = {
