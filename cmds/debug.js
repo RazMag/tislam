@@ -1,11 +1,14 @@
-const ytdl = require('ytdl-core');
-const makeEmbedMessage = require('../oparations/makeEmbedMessage.js');
-const conn = require('../oparations/sequelize.js');
+const { Song } = require('../db/db.js');
 
 module.exports = {
 	name: 'debug',
 	description: 'debugging puposes',
 	async execute(message, args) {
-                console.log(conn);
+		Song.create({
+			song_url: args[0],
+			guild_id: message.guild.id
+		});
+		test = await Song.findOne()
+		console.log(test.toJSON())
 	},
 };

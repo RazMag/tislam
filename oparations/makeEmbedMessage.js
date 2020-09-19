@@ -15,6 +15,6 @@ module.exports = {
                 { name: 'Queue', value: '⏸ mmmmmmmmmmmmmmmmmm...\n• 6\n• 7\n• 8', inline: true },
                 { name: 'Requested By', value: '<@141493848676368384>\n <@91483820141862912>', inline: true },
             )
-            .setFooter('▰▰▰▰▰▱▱▱▱▱', 'https://i.imgur.com/rF2SUu5.png');
+            .setFooter('▰▰▰▰▰▱▱▱▱▱', 'https://i.imgur.com/rF2SUu5.png'); // maybe log last command instead and move this up
         return message;},
 }
