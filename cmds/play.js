@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core-discord');
 
 module.exports = {
 	name: 'play',
-	description: 'Play a song from a given source determined dynamiclly. returns dispatcher',
+	description: 'Play a song from a given source determined dynamiclly.',
 	async execute(message, args) {   
         const connection = await message.member.voice.channel.join();
         message.client.guildToConnection.set(message.guild.id , connection );
