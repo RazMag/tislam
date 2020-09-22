@@ -1,6 +1,7 @@
 const { Song } = require('../db/db.js');
-var {google} = require('googleapis');
+var { google } = require('googleapis');
 require('dotenv').config()
+const play  = require('../oparations/play.js');
 
 module.exports = {
 	name: 'queue',
@@ -8,7 +9,7 @@ module.exports = {
 	async execute(message, args) {
 		var service = google.youtube({
 			version: 'v3',
-			auth: process.env.YOUTUBE_TOKEN //TODO change this!!!!
+			auth: process.env.YOUTUBE_TOKEN 
 		});
 		var result =  await service.search.list({
 			part: 'snippet',
@@ -26,9 +27,10 @@ module.exports = {
 			song_name: result.data.items[0].snippet.title,
 			duration: resultObj.data.items[0].contentDetails.duration,
 			requested_by: message.author.id,
-		});
-		Song.findOne().then((obj)=>{
-			console.log(obj.toJSON());
-		}) //TODO connect to play
+        });
+        await play.execute(message); //TODO check if playing
+		// Song.findOne().then((obj)=>{
+		// 	console.log(obj.toJSON());
+		// })
 	},
 };
